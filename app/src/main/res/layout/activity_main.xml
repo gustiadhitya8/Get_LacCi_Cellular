@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitleLac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="LAC (Location Area Coverage)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="..."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textTitleLac"
+        app:layout_constraintStart_toStartOf="@+id/textTitleLac"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleLac" />
+
+    <TextView
+        android:id="@+id/textTitleCI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CI (Cell Id)"
+        app:layout_constraintEnd_toEndOf="@+id/textLac"
+        app:layout_constraintStart_toStartOf="@+id/textLac"
+        app:layout_constraintTop_toBottomOf="@+id/textLac" />
+
+    <TextView
+        android:id="@+id/textCI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textTitleCI"
+        app:layout_constraintStart_toStartOf="@+id/textTitleCI"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleCI" />
+
+    <Button
+        android:id="@+id/buttonLacCi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Get LAC CI"
+        app:layout_constraintEnd_toEndOf="@+id/textCI"
+        app:layout_constraintStart_toStartOf="@+id/textCI"
+        app:layout_constraintTop_toBottomOf="@+id/textCI" />
+</androidx.constraintlayout.widget.ConstraintLayout>
